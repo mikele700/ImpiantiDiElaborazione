@@ -1,0 +1,63 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{microtype}
+\usepackage{lmodern}
+%\usepackage{frontespizio}
+%\pagestyle{headings}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[CE,CO]{\leftmark}
+\fancyfoot[CE,CO]{\thepage}
+\usepackage[italian]{varioref}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{caption}
+\captionsetup{tableposition=top,figureposition=bottom,font=small,format=hang,labelfont={sf,bf}}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\usepackage{version}
+\usepackage{pdfpages}
+
+\begin{document}
+	\begin{titlepage}
+		\centering
+		{\scshape\huge Università degli Studi di Napoli Federico II \par}
+		\vspace{1cm}
+		{\scshape\large Dipartimento di Ingegneria Elettrica e delle Tecnologie dell'Informazione\par}
+		\vspace{0.5cm}
+		
+		\vspace{1.5cm}
+		{\bfseries\huge Impianti di Elaborazione\par}
+		\vspace{0.5cm}
+		{\ttfamily\Large Elaborato\par}
+		%{\huge\bfseries Elaborato\par}
+		\vspace{2cm}
+		{\Large\itshape Michele Pommella\par}
+		\vspace{1.5cm}
+		{\large Prof.~Domenico Cotroneo\par}
+		
+		\vfill
+		
+		% Bottom of the page
+		{\large Anno 2018-2019\par}
+	\end{titlepage}
+
+\tableofcontents
+\listoffigures
+
+\mainmatter
+\include{./TeX_files/Benchmark}
+\include{./TeX_files/PCAClustering}
+
+\backmatter
+% bibliography, glossary and index would go here.
+
+\end{document}
