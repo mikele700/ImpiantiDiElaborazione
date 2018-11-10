@@ -10,8 +10,8 @@
 #include <string.h>
 
 void main(int argc, char* argv[]){
-	int fd = open("test.bin", O_CREAT|O_TRUNC|O_WRONLY|O_SYNC|O_DIRECT, S_IRWXU);
-	/* 
+	int fd = open("test.bin", O_CREAT|O_TRUNC|O_WRONLY|O_DIRECT, S_IRWXU);
+	/*
 		O_SYNC  provides  synchronized  I/O  file integrity completion, meaning
        write operations will flush data and all  associated  metadata  to  the
        underlying  hardware.  O_DSYNC provides synchronized I/O data integrity
@@ -36,43 +36,48 @@ void main(int argc, char* argv[]){
 		size_t FILESIZE = strtoul(argv[1], NULL, 0);
 		size_t BLOCKSIZE = strtoul(argv[2], NULL, 0);
 		BLOCKSIZE -= (BLOCKSIZE%512);
-		
+
 		void* buffer;
 		int* temp;
-		posix_memalign(&buffer, 512, FILESIZE);
-		
-		temp = buffer;
-		srand(time(NULL));
-		for(int i = 0; i<FILESIZE/sizeof(int); i++){
-			temp[i] = rand();
-			//temp[i] = i;
-		}
-		
-		size_t count = FILESIZE/BLOCKSIZE;
-		struct timeval inizio, fine;
-		temp = buffer;
-		gettimeofday(&inizio, NULL);
-		for(; count > 0; count--){
-			write(fd, temp, BLOCKSIZE);
-			temp += BLOCKSIZE/sizeof(int);
-		}
-		//write(fd, buffer, FILESIZE);
-		gettimeofday(&fine, NULL);
-		
-		FILE* writetime;
-		char nome[50] = "writetime";
-		strcat(nome, argv[1]);
-		strcat(nome, "x");
-		strcat(nome, argv[2]);
-		
-		writetime = fopen(nome, "a");
-		if(writetime){
-			fprintf(writetime, "TIME: %ld us\n", (long)fine.tv_sec*1000000+(long)fine.tv_usec-(long)inizio.tv_sec*1000000-(long)inizio.tv_usec);
-			fclose(writetime);
+		int stato;
+		stato = posix_memalign(&buffer, 512, FILESIZE);
+
+		if(!stato){
+			temp = buffer;
+			srand(time(NULL));
+			for(int i = 0; i<FILESIZE/sizeof(int); i++){
+				temp[i] = rand();
+				//temp[i] = i;
+			}
+
+			size_t count = FILESIZE/BLOCKSIZE;
+			struct timeval inizio, fine;
+			temp = buffer;
+			gettimeofday(&inizio, NULL);
+			for(; count > 0; count--){
+				write(fd, temp, BLOCKSIZE);
+				temp += BLOCKSIZE/sizeof(int);
+			}
+			//write(fd, buffer, FILESIZE);
+			gettimeofday(&fine, NULL);
+
+			FILE* writetime;
+			char nome[50] = "writetime";
+			strcat(nome, argv[1]);
+			strcat(nome, "x");
+			strcat(nome, argv[2]);
+
+			writetime = fopen(nome, "a");
+			if(writetime){
+				fprintf(writetime, "TIME: %ld us\n", (long)fine.tv_sec*1000000+(long)fine.tv_usec-(long)inizio.tv_sec*1000000-(long)inizio.tv_usec);
+				fclose(writetime);
+			}
+			else
+				perror("Salvataggio risultati non riuscito");
+			free(buffer);
 		}
 		else
-			perror("Salvataggio risultati non riuscito");
-		free(buffer);
+			perror("Errore nell'allocazione del buffer");
 		close(fd);
 	}
 	else
