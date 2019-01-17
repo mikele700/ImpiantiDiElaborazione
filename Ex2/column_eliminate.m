@@ -3,8 +3,8 @@
 %Script per eliminare le colonne a varianza nulla
 %
 
-A=xlsread("EsercizioPCA_CLustering_versStudenti.xlsx");
-V=var(A);
+[num,txt,raw]=xlsread("EsercizioPCA_CLustering_versStudenti.xlsx");
+V=var(num);
 i=find(~V);
-A(:,i)=[];
-xlswrite("EsercizioPCA_CLustering_versStudenti_new.xlsx",A);
+raw(:,i)=[];
+xlswrite("EsercizioPCA_CLustering_versStudenti_new.xlsx",raw);
