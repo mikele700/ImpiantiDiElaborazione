@@ -40,12 +40,14 @@ void main(int argc, char* argv[]){
 		void* buffer;
 		int* temp;
 		int stato;
-		stato = posix_memalign(&buffer, 512, FILESIZE);
+		//stato = posix_memalign(&buffer, 512, FILESIZE);
+		stato = posix_memalign(&buffer, 512, BLOCKSIZE);
 
 		if(!stato){
 			temp = buffer;
 			srand(time(NULL));
-			for(int i = 0; i<FILESIZE/sizeof(int); i++){
+			//for(int i = 0; i<FILESIZE/sizeof(int); i++){
+			for(int i = 0; i<BLOCKSIZE/sizeof(int); i++){
 				temp[i] = rand();
 				//temp[i] = i;
 			}
@@ -56,7 +58,7 @@ void main(int argc, char* argv[]){
 			gettimeofday(&inizio, NULL);
 			for(; count > 0; count--){
 				write(fd, temp, BLOCKSIZE);
-				temp += BLOCKSIZE/sizeof(int);
+				//temp += BLOCKSIZE/sizeof(int);
 			}
 			//write(fd, buffer, FILESIZE);
 			gettimeofday(&fine, NULL);
@@ -69,7 +71,8 @@ void main(int argc, char* argv[]){
 
 			writetime = fopen(nome, "a");
 			if(writetime){
-				fprintf(writetime, "TIME: %ld us\n", (long)fine.tv_sec*1000000+(long)fine.tv_usec-(long)inizio.tv_sec*1000000-(long)inizio.tv_usec);
+				//fprintf(writetime, "TIME: %ld us\n", (long)fine.tv_sec*1000000+(long)fine.tv_usec-(long)inizio.tv_sec*1000000-(long)inizio.tv_usec);
+				fprintf(writetime, "%ld\n", (long)fine.tv_sec*1000000+(long)fine.tv_usec-(long)inizio.tv_sec*1000000-(long)inizio.tv_usec); // tempo in microsecondi
 				fclose(writetime);
 			}
 			else

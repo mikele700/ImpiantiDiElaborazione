@@ -1,0 +1,7 @@
+Prima dell'esecuzione dello script eseguire:
+
+sudo su
+
+per ottenere i permessi di amministratore nel terminale specifico. Portarsi nella cartella dello script e lanciare l'esecuzione:
+
+bash ./BMrun.sh
