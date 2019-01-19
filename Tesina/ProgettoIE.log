@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.3.26)  15 OCT 2018 12:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.3.26)  19 JAN 2019 01:29
 entering extended mode
 **./ProgettoIE.tex
 (ProgettoIE.tex
@@ -754,41 +754,72 @@ File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count129
 \AM@templatesizebox=\box32
 )
-(ProgettoIE.aux (TeX_files/Benchmark.aux) (TeX_files/PCAClustering.aux))
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count130
+\lst@gtempboxa=\box33
+\lst@token=\toks28
+\lst@length=\count131
+\lst@currlwidth=\dimen144
+\lst@column=\count132
+\lst@pos=\count133
+\lst@lostspace=\dimen145
+\lst@width=\dimen146
+\lst@newlines=\count134
+\lst@lineno=\count135
+\lst@maxwidth=\dimen147
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count136
+\lst@skipnumbers=\count137
+\lst@framebox=\box34
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+) (ProgettoIE.aux
+(TeX_files/Benchmark.aux) (TeX_files/PCAClustering.aux))
 \openout1 = `ProgettoIE.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 31.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
-\scratchdimen=\dimen144
-\scratchbox=\box33
-\nofMPsegments=\count131
-\nofMParguments=\count132
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count133
-\MPscratchDim=\dimen145
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count138
+\scratchdimen=\dimen148
+\scratchbox=\box35
+\nofMPsegments=\count139
+\nofMParguments=\count140
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count141
+\MPscratchDim=\dimen149
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
+\everyMPtoPDFconversion=\toks30
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -800,9 +831,9 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \it@ocap on input line 29.
-LaTeX Info: Redefining \it@ccap on input line 29.
-LaTeX Info: Redefining \microtypecontext on input line 29.
+LaTeX Info: Redefining \it@ocap on input line 31.
+LaTeX Info: Redefining \it@ccap on input line 31.
+LaTeX Info: Redefining \microtypecontext on input line 31.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -819,10 +850,11 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 29.
+\AtBeginShipoutBox=\box36
+Package hyperref Info: Link coloring OFF on input line 31.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -830,18 +862,18 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count136
+\c@section@level=\count144
 LaTeX Info: Redefining \Ref on input line 515.
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (ProgettoIE.out) (ProgettoIE.out)
 \@outlinefile=\write3
 \openout3 = `ProgettoIE.out'.
 
-LaTeX Info: Redefining \Ref on input line 29.
+LaTeX Info: Redefining \Ref on input line 31.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -851,6 +883,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
+\c@lstlisting=\count145
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -860,7 +893,7 @@ Package microtype Info: Character `029' is missing
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 40.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -881,7 +914,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2
 
-] (ProgettoIE.toc)
+] (ProgettoIE.toc
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 4.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 4.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 4.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 4.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 4.
+)
 \tf@toc=\write4
 \openout4 = `ProgettoIE.toc'.
 
@@ -912,18 +971,48 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
  (TeX_files/Benchmark.tex
 Capitolo 1.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 4.
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 4.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.57 \include{./TeX_files/Benchmark}
-                                     [1
+l.24 	\section
+              {Lettura} [1
 
 
 ]
-\openout2 = `./TeX_files/PCAClustering.aux'.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 26.
+ (codice/benchmarkI.c
+Overfull \hbox (32.99744pt too wide) in paragraph at lines 17--18
+[][][][][][][][][][][][][][][][][][][] 
+ []
 
- (TeX_files/PCAClustering.tex
+
+Overfull \hbox (40.0474pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (61.19727pt too wide) in paragraph at lines 22--24
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (18.89752pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (32.99744pt too wide) in paragraph at lines 29--30
+[][][][][][][][][][][][][][] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -934,19 +1023,84 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1 \chapter
-            {The Second Chapter} [2
+l.33 			FILE* 
+              readtime; [2]
+Overfull \hbox (18.89752pt too wide) in paragraph at lines 41--42
+[][][][][][][][][][][][][][][][] 
+ []
 
 
+Overfull \hbox (18.89752pt too wide) in paragraph at lines 42--43
+[][][][][][][][][][][] 
+ []
 
-]
-Capitolo 2.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
- been already used, duplicate ignored
+
+Overfull \hbox (32.99744pt too wide) in paragraph at lines 44--45
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (103.49701pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (96.44705pt too wide) in paragraph at lines 54--55
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.7976pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+) (codice/benchmarkO.c
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 \include{./TeX_files/PCAClustering}
-                                         [3]
+l.4 #
+     include <fcntl.h> [3]
+Overfull \hbox (25.94748pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (32.99744pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (40.0474pt too wide) in paragraph at lines 19--20
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (61.19727pt too wide) in paragraph at lines 25--27
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (54.14731pt too wide) in paragraph at lines 30--31
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (18.89752pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (25.94748pt too wide) in paragraph at lines 40--41
+[][][][][][][][][][][][][][] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -957,36 +1111,181 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60 \backmatter
-                 [4
+l.45 			char 
+             nome[50] = "writetime"; [4]
+Overfull \hbox (25.94748pt too wide) in paragraph at lines 52--53
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (18.89752pt too wide) in paragraph at lines 53--54
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (32.99744pt too wide) in paragraph at lines 55--56
+[][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (103.49701pt too wide) in paragraph at lines 61--62
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (96.44705pt too wide) in paragraph at lines 65--66
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.7976pt too wide) in paragraph at lines 69--70
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+) <./immagine/W100MBx100KB.jpg, id=188, 233.37187pt x 163.3603pt>
+File: ./immagine/W100MBx100KB.jpg Graphic file (type jpg)
+
+<use ./immagine/W100MBx100KB.jpg>
+Package pdftex.def Info: ./immagine/W100MBx100KB.jpg used on input line 36.
+(pdftex.def)             Requested size: 233.37129pt x 163.3599pt.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 37.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 37.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 		I
+        n caso di distribuzioni skewed ed eventuali \emph{outlier}, si è op...
+[5] <./immagine/R1GBx1MB.jpg, id=219, 252.945pt x 168.63pt>
+File: ./immagine/R1GBx1MB.jpg Graphic file (type jpg)
+
+<use ./immagine/R1GBx1MB.jpg>
+Package pdftex.def Info: ./immagine/R1GBx1MB.jpg used on input line 43.
+(pdftex.def)             Requested size: 252.94438pt x 168.62958pt.
+
+<./immagine/letture.jpg, id=220, 761.84625pt x 202.50656pt>
+File: ./immagine/letture.jpg Graphic file (type jpg)
+
+<use ./immagine/letture.jpg>
+Package pdftex.def Info: ./immagine/letture.jpg used on input line 50.
+(pdftex.def)             Requested size: 512.16644pt x 199.17502pt.
+
+Overfull \hbox (122.16644pt too wide) in paragraph at lines 50--51
+ [][] 
+ []
+
+<./immagine/scritture.jpg, id=221, 646.66594pt x 203.25937pt>
+File: ./immagine/scritture.jpg Graphic file (type jpg)
+
+<use ./immagine/scritture.jpg>
+Package pdftex.def Info: ./immagine/scritture.jpg used on input line 56.
+(pdftex.def)             Requested size: 512.17284pt x 199.1773pt.
+
+Overfull \hbox (122.17284pt too wide) in paragraph at lines 56--57
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 		\end{figure}
+                    [6 <./immagine/W100MBx100KB.jpg> <./immagine/R1GBx1MB.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <./immagine/letture.jpg> <./immagine/scritture.jpg>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+\openout2 = `./TeX_files/PCAClustering.aux'.
+
+ (TeX_files/PCAClustering.tex
+Capitolo 2.
+) [9
+
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
- (ProgettoIE.aux (TeX_files/Benchmark.aux)
-(TeX_files/PCAClustering.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
+ (ProgettoIE.aux (TeX_files/Benchmark.aux) (TeX_files/PCAClustering.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
 Package rerunfilecheck Info: File `ProgettoIE.out' has not changed.
-(rerunfilecheck)             Checksum: F947A4B3BBCB608410FE1A2A4FC23F34;107.
+(rerunfilecheck)             Checksum: B72D36133D51324A523D0F4E9E9305AA;291.
  ) 
 Here is how much of TeX's memory you used:
- 11094 strings out of 493335
- 164984 string characters out of 3139254
- 308511 words of memory out of 3000000
- 14426 multiletter control sequences out of 15000+200000
- 36777 words of font info for 36 fonts, out of 3000000 for 9000
+ 13324 strings out of 493335
+ 195702 string characters out of 3139254
+ 366316 words of memory out of 3000000
+ 16376 multiletter control sequences out of 15000+200000
+ 76226 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,11n,43p,799b,383s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-mr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ProgettoIE.pdf (10 pages, 119532 bytes).
+ 43i,12n,49p,799b,1833s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
+.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+r8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmtt12.pfb>
+Output written on ProgettoIE.pdf (16 pages, 538938 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 12305 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
+ 25661 words of extra memory for PDF output out of 29859 (max. 10000000)
 
