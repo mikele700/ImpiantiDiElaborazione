@@ -1,0 +1,2 @@
+Raccolta informazioni di low level inizia a 16:29:03 e dura 6 minuti. Ci saranno quindi punti iniziali e finali in cui l'esperimento sarà concluso (dura circa 5 minuti, o poco più). Ad occhio 3-4 punti iniziali sono precedenti l'esperimento e 26 punti finali sono successivi ad esso (vedi colonne di in e id).
+In Jmeter selezionare il nuovo path del applevinfo nei listener (grafo, summary e table), anche se non credo sia fondamentale per la caratterizzazione perchè si può fare tutto in JMP.
