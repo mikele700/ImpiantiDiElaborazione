@@ -116,3 +116,33 @@
 		\end{table}
 	
 	\section{Experimental Design and Analysis}
+		Per studiare l'impatto del tasso di richiesta e del tipo di pagina sul tempo di risposta medio, si prosegue con la tecnica del \emph{Design of Experiment}. I fattori sono stati categorizzati. Si sono considerati 2 tipi di pagina: Piccola (Amazon.html), Grande (Sample-jpg-image-5mb.jpg). Si sono poi determinati 4 livelli per il tasso di richiesta, corrispondenti al 20\%, 40\%, 60\%, 80\% della usable capacity media delle pagine: Low, Low-Medium, High-Medium, High. I trattamenti sono stati ripetuti per 10 volte ed in ordine casuale, con durata di 1 minuto ciascuno. Tramite JMP si è ricavata la stima del modello.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics{./immagine/Stimamodello1.png}
+			\label{fig:doe-st}
+			\caption{Analisi della varianza}
+		\end{figure}
+	
+		Dal rapporto della somma dei quadrati dei fattori rispetto a quella totale, si evince la loro importanza: 70\% della variazione totale è attribuito a Page Size, 16.3\% ad Intensity, il resto all'errore. In realtà parte dell'importanza dell'errore è dovuta all'interazione tra i fattori trascurata, che rappresenta il 10.7\% della variazione totale. Il modello, quindi, spiega circa 86.3\% di SST, come testimonia anche $R^2$.\par
+		Per la scelta del tipo di analisi, si provano le assunzioni di normalità ed omoschedasticità. Per la normalità si effetua il \emph{Quantile-Quantile plot} dei residui. Si osserva che la loro distribuzione è asimmetrica. Ciò può essere anche confermato dal test di \emph{Shapiro-Wilk}, che restituisce $p<0.05$, rigettando l'ipotesi di normalità.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics{./immagine/Distribuzione.png}
+			\label{fig:doe-n}
+			\caption{Q-Q plot e test di Shapiro-Wilk}
+		\end{figure}
+	
+		Necessitiamo, quindi, di un'analisi non parametrica. Ciò può farci già propendere per il test di \emph{Wilcoxon/Kruskal-Wallis}, anche senza valutare l'omoschedasticità (che da test visuale risulta non verificata).
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{./immagine/StimaYrispettoaX.png}
+			\caption{Test di Wilcoxon/Kruskal-Wallis}
+			\label{fig:doe-yx}
+		\end{figure}
+	
+		Il test di Kruskal-Wallis rigetta l'ipotesi nulla (campioni dalla stessa popolazione) per entrambi i fattori. Troviamo, infatti, $p<0.05$, quindi entrambi gli effetti sono statisticamente significativi con livello di significatività 0.05.
+	
