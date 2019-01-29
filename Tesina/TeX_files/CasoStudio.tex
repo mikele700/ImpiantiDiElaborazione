@@ -13,20 +13,138 @@
 	\section{Workload Characterization}
 		Mediante Jmeter, sono state inviate al server $60req/s$ di 5 diversi tipi di pagine. Il tasso di richieste è stato impostato con il \emph{Constant Throughput Timer}, selezionando $3600req/min$, svolte dai thread complessivamente. Le richieste sono infatti eseguite da 30 thread per 5 minuti. Ogni richiesta può essere casualmente di uno dei 5 tipi:
 		\begin{itemize}
-			\item \emph{Instagramlogin.html} di $32MB$
+			\item \emph{Instagramlogin.html} di $29KB$
 			\item \emph{FrancoCFA.html} di $112KB$
 			\item \emph{Amazon.html} di $460KB$
 			\item \emph{Facebook.html} di $1.4MB$
-			\item \emph{Sample-jpg-image-5mb.jpg} di $1MB$
+			\item \emph{Sample-jpg-image-5mb.jpg} di $5MB$
 		\end{itemize}
 		
 		I dati di application level sono stati raccolti con un \emph{Simple Data Writer}. Lato server i dati system level sono stati collezionati per 6 minuti, tramite il comando \textsf{vmstat -n -a 1 360}. Alcune istanze, quindi, tra questi sono precedenti e successive all'esperimento.
+		
+		\subsection{WL Dati Application Level}
+		Nei 5 minuti di test sono state prelevate 515 istanze (richieste inviate al web server) descritte da 17 parametri app-level. Tra questi, quelli maggiormente significativi sono: 
+		\begin{itemize}
+			\item \textit{Elapsed}: tempo tra la richiesta e l'ultima risposta
+			\item \textit{Label}: tipologia di pagina in base alla sua dimensione
+			\item \textit{ThreadName}: thread a cui è stata assegnata la richiesta
+			\item \textit{Success}: esito della richiesta
+			\item \textit{Bytes}: dimensione della pagina richiesta
+			\item \textit{Latency}: tempo tra la richiesta e la prima risposta
+			\item \textit{Connect}: tempo necessario ad instaurare la connessione
+		\end{itemize}
+		
+		Notando l'andamento delle distribuzioni di questi parametri, si è concluso che ha senso caratterizzare statisticamente solo tre di questi, ovvero \textit{Elapsed}, \textit{Latency} e \textit{Connect}.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{./immagine/elapsed.png}\quad\includegraphics[scale=0.6]{./immagine/latency.png}
+			\caption{Distribuzione Elapsed Time e Latency}
+			\label{fig:elapse_latency}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.585]{./immagine/connect.png}
+			\caption{Distribuzione Connect}
+			\label{fig:connect}
+		\end{figure}
+		
+		Osservando le distribuzioni di questi tre parametri, si nota che sono molto poco skewed, quindi si è concluso che la media è un buon indice statistico in grado di descriverle.\\
+		Consideriamo ora la distribuzione del parametro \textit{Success}:
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.755]{./immagine/success.png}
+			\caption{Distribuzione Success}
+			\label{fig:success}
+		\end{figure}
+		
+		Come si nota, tutte le richieste sono andate a buon fine il che 	vuol dire che la connessione è molto affidabile e nel nostro caso non ha generato mai un fallimento.Questo è dovuto al fatto che si è utilizzata una connessione Ethernet che dal punto di vista fisico è molto affidabile, così come il protocollo applicativo http eseguito dalle richieste, poiché si basa su TCP.\\\\\\
+		Osserviamo ora la distribuzione dei parametri \textit{Label} e \textit{ThreadName}:
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.7]{./immagine/label.png}\quad\includegraphics[scale=0.96]{./immagine/threadname.png}
+			\caption{Distribuzione Label e ThreadName}
+			\label{fig:label_threadname}
+		\end{figure}
+		
+		
+		Come si nota ogni tipologia di pagina è distribuita abbastanza equamente tra i thread, per una distribuzione del carico alquanto regolare.\\\\
+		Infine si è deciso di verificare come variano i parametri \textit{Elapsed}, \textit{Latency} e \textit{Connect} al variare della dimensione delle pagine richieste.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.85]{./immagine/grafico_elapsed.png}
+			\caption{Grafico variazione Elapsed rispetto alla tipologia di pagina}
+			\label{fig:grafico_elapsed}
+		\end{figure}
+		
+		Come si nota dalla \textbf{Figura \ref{fig:grafico_elapsed}}, l'elapsed time cresce al crescere della dimensione delle pagine (misurata in bytes).\\
+		Di seguito invece gli altri due grafici mostrano come latency e tempo di connessione non dipendano dalla grandezza delle pagine.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.85]{./immagine/grafico_latency.png}
+			\caption{Grafico variazione Latency rispetto alla tipologia di pagina}
+			\label{fig:grafico_latency}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.85]{./immagine/grafico_connect.png}
+			\caption{Grafico variazione Connect rispetto alla tipologia di pagina}
+			\label{fig:grafico_connect}
+		\end{figure}
+		
+		Tutto quello appena detto si può verificare anche calcolando la correlazione tra i parametri elapsed, latency, bytes e connect. Calcoliamo quindi la matrice di correlazione:\\
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.85]{./immagine/correlazione.png}
+			\caption{Matrice di correlazione}
+			\label{fig:correlazione}
+		\end{figure}
+		
+		Si può vedere come elapsed e bytes siano molto correlati a differenza degli altri parametri, questo perché più è grande la pagina richiesta in termini di byte, più è grande il tempo di risposta.\\\\
+		
+		\subsection{WL Dati System Level}
+		Passiamo all'analisi dei dati di basso livello del sistema. Nei 5 minuti in cui è stato eseguito il test, sono stati prelevate 360 istanze (una al secondo) descritte da 17 parametri. Di queste sono state eliminate le prime tre e le ultime 26 perché precedenti e successive all'esperimento così come si nota dal corrispondente basso numero di interruzioni e dall'alta percentuale di tempo in cui il sistema è idle.\\
+		Per prima cosa osservando le distribuzioni dei parametri, sono state eliminate le colonne a varianza nulla che sono 6. Sulle colonne rimaste applichiamo la tecnica della PCA per trovare le componenti principali.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.85]{./immagine/autovalori_ex3.png}
+			\caption{Componenti principali e varianza conservata}
+			\label{fig:autovalori_ex3}
+		\end{figure}
+		
+		Osservando gli autovalori, si è scelto di prendere 9 componenti principali che spiegano il 97\% della varianza.\\
+		Dopo aver fatto questo, si adotta la tecnica di clustering di Ward sulle 9 componenti per ridurre il numero di istanze del dataset originario. Osservando il dendrogramma si è determinato che il salto si trovasse a 17 cluster, che determinano una perdita di varianza pari al 30\%, permettendo quindi di conservarne il 70\%.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.85]{./immagine/dendrogramma_ex3.png}
+			\caption{Dendrogramma}
+			\label{fig:dendrogramma_ex3}
+		\end{figure}
+		
+		Infine riportiamo l'insieme di istanze rappresentative del dataset oroginario, selezionate in maniera casuale prendendone una per ogni cluster. 
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.685]{./immagine/final_data_ex3.png}
+			\caption{Dati finali}
+			\label{fig:final_data_ex3}
+		\end{figure}
+		
+		
 	\section{Capacity Test}
 		Il Capacity Test è stato eseguito con le pagine Amazon.html, Facebook.html, Sample-jpg-image-5mb.jpg, rappresentanti tipologie di pagine piccole, medie e grandi. Il test è stato attuato prima considerando tutte le pagine (\emph{Random Controller}), poi ciascuna singolarmente.\par
 		Throughput e response time sono stati analizzati al crescere delle richieste al minuto. Diverse osservazioni sono state collezionate per una singola condizione di carico, caratterizzate, poi, dalla media, poiché c'è interesse nell'andamento globale.\par
 		Il tasso di richieste desiderato è stato ottenuto stabilendo il tasso per ciascun thread ed incrementando ogni volta il loro numero.
 		
-		\begin{table}
+		\begin{table}[H]
 			\footnotesize
 			\caption{Capacity Test per tipo di richiesta}
 			\label{tab:ct-tip}
@@ -56,7 +174,7 @@
 			\end{tabular}
 		\end{table}
 	
-		I risultati ottenuti sono riportati in \textbf{Tabella \ref{tab:ct}}. Di seguito l'andamento di throughput (1/min) e response time (ms), all'aumentare del carico nei 4 casi considerati.
+		I risultati ottenuti sono riportati in \textbf{Tabella \ref{tab:ct-tip}}. Di seguito l'andamento di throughput (1/min) e response time (ms), all'aumentare del carico nei 4 casi considerati.
 		
 		\begin{figure}[H]
 			\centering

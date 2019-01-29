@@ -1,24 +1,35 @@
 \select@language {italian}
 \select@language {italian}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Scrittura di un file di $100MB$ con blocchi di $100KB$\relax }}{8}{figure.caption.3}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Lettura di un file di $1GB$ con blocchi di $1MB$\relax }}{8}{figure.caption.4}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Dati delle letture\relax }}{9}{figure.caption.5}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Dati delle scritture\relax }}{9}{figure.caption.6}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Scrittura di un file di $100MB$ con blocchi di $100KB$\relax }}{9}{figure.caption.3}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Lettura di un file di $1GB$ con blocchi di $1MB$\relax }}{9}{figure.caption.4}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Dati delle letture\relax }}{10}{figure.caption.5}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Dati delle scritture\relax }}{10}{figure.caption.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Distribuzione colonne costanti\relax }}{12}{figure.caption.7}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Componenti principali e varianza conservata\relax }}{13}{figure.caption.8}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Dendrogramma\relax }}{14}{figure.caption.9}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Cluster con relativa varianza persa\relax }}{15}{figure.caption.10}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Grafico devianza persa al variare del numero di cluster\relax }}{16}{figure.caption.11}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Numero di elementi per ogni cluster\relax }}{17}{figure.caption.12}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Dati finali\relax }}{18}{figure.caption.13}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Distribuzione colonne costanti\relax }}{13}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Componenti principali e varianza conservata\relax }}{14}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Dendrogramma\relax }}{15}{figure.caption.9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Cluster con relativa varianza persa\relax }}{16}{figure.caption.10}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Grafico devianza persa al variare del numero di cluster\relax }}{17}{figure.caption.11}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Numero di elementi per ogni cluster\relax }}{18}{figure.caption.12}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Dati finali\relax }}{19}{figure.caption.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Stato del Web: Kilobyte totali\relax }}{20}{figure.caption.14}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Pagine Random\relax }}{22}{figure.caption.16}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Pagine Piccole\relax }}{23}{figure.caption.17}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Pagine Medie\relax }}{24}{figure.caption.18}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Pagine Grandi\relax }}{25}{figure.caption.19}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Analisi della varianza\relax }}{27}{figure.caption.21}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Q-Q plot e test di Shapiro-Wilk\relax }}{28}{figure.caption.22}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Test di Wilcoxon/Kruskal-Wallis\relax }}{29}{figure.caption.23}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Stato del Web: Kilobyte totali\relax }}{21}{figure.caption.14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Distribuzione Elapsed Time e Latency\relax }}{22}{figure.caption.15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribuzione Connect\relax }}{23}{figure.caption.16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribuzione Success\relax }}{23}{figure.caption.17}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Distribuzione Label e ThreadName\relax }}{24}{figure.caption.18}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Grafico variazione Elapsed rispetto alla tipologia di pagina\relax }}{25}{figure.caption.19}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Grafico variazione Latency rispetto alla tipologia di pagina\relax }}{25}{figure.caption.20}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Grafico variazione Connect rispetto alla tipologia di pagina\relax }}{26}{figure.caption.21}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Matrice di correlazione\relax }}{26}{figure.caption.22}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Componenti principali e varianza conservata\relax }}{27}{figure.caption.23}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Dendrogramma\relax }}{28}{figure.caption.24}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Dati finali\relax }}{28}{figure.caption.25}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Pagine Random\relax }}{30}{figure.caption.27}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Pagine Piccole\relax }}{31}{figure.caption.28}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Pagine Medie\relax }}{32}{figure.caption.29}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Pagine Grandi\relax }}{33}{figure.caption.30}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Analisi della varianza\relax }}{35}{figure.caption.32}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Q-Q plot e test di Shapiro-Wilk\relax }}{36}{figure.caption.33}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Test di Wilcoxon/Kruskal-Wallis\relax }}{37}{figure.caption.34}
