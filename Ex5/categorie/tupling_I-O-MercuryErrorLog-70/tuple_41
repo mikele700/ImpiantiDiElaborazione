@@ -1,0 +1,3 @@
+1168882464 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168882483 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168882483 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Read (x) x x x x x x x x x

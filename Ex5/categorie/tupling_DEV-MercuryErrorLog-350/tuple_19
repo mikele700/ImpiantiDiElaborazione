@@ -1,0 +1,5 @@
+1167845732 tg-c383 DEV GM: LANAI[x]: SRAM PARITY error
+1167845742 tg-c383 DEV firmware error-x:SRAM parity error on NIC, serial no=x
+1167845742 tg-c383 DEV gm.interrupt.type =x x
+1167845742 tg-c383 DEV is->interrupt.last byte.ready =x x
+1167845742 tg-c383 DEV GM: gm exit() called in the OTH: GM aborted<x>GM: NOTICE: drivers gm lanai command.c:x:gm lanai command report error():OTH

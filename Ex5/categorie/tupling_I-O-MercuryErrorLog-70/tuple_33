@@ -1,0 +1,24 @@
+1168780302 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780302 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Write (x) x x x x x x x x x
+1168780317 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780317 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Write (x) x x x x x x x x x
+1168780332 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780332 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Write (x) x x x x x x x x x
+1168780347 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780347 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Write (x) x x x x x x x x x
+1168780362 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780377 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780377 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Write (x) x x x x x x x x x
+1168780391 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780391 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Write (x) x x x x x x x x x
+1168780406 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780406 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Write (x) x x x x x x x x x
+1168780421 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780436 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780436 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Write (x) x x x x x x x x x
+1168780451 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780451 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Write (x) x x x x x x x x x
+1168780472 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780472 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Read (x) x x x x x x x x x
+1168780487 tg-c550 I-O SCSI Error: (x:x:x) Status=x (CHECK CONDITION)
+1168780487 tg-c550 I-O scsx: ERROR on channel x, id x, lun x, CDB: Write (x) x x x x x x x x x
