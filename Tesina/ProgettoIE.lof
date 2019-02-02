@@ -33,3 +33,19 @@
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Analisi della varianza\relax }}{35}{figure.caption.32}
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Q-Q plot e test di Shapiro-Wilk\relax }}{36}{figure.caption.33}
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Test di Wilcoxon/Kruskal-Wallis\relax }}{37}{figure.caption.34}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Sensitivity Analysis di Mercury\relax }}{38}{figure.caption.35}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Sensitivity Analysis di BlueGene/L\relax }}{39}{figure.caption.36}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Reliability empirica e TTF empirica di Mercury\relax }}{40}{figure.caption.37}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Reliability empirica e TTF empirica di BlueGene/L\relax }}{40}{figure.caption.38}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Fitting della Reliability empirica in Mercury\relax }}{41}{figure.caption.39}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Fitting della Reliability empirica in BlueGene\relax }}{41}{figure.caption.40}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Sensitivity Analysis dei top-5 entries-prone nodes di Mercury\relax }}{43}{figure.caption.44}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Empirical Reliability degli entries-prone nodes di Mercury\relax }}{44}{figure.caption.46}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Sensitivity Analysis dei top-5 entries-prone nodes di BlueGene/L\relax }}{45}{figure.caption.47}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Empirical Reliability degli entries-prone nodes di BlueGene/L\relax }}{46}{figure.caption.49}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Empirical Reliability dei nodi di calcolo di Mercury\relax }}{47}{figure.caption.50}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Sensitivity Analysis delle categorie di errore di Mercury\relax }}{48}{figure.caption.51}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Empirical Reliability delle categorie di errore di Mercury\relax }}{49}{figure.caption.53}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Sensitivity Analysis delle Compute Unit di BlueGene/L\relax }}{50}{figure.caption.54}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Empirical Reliability delle Compute Unit di BlueGene/L\relax }}{51}{figure.caption.56}

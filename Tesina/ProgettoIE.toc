@@ -16,3 +16,8 @@
 \contentsline {subsection}{\numberline {3.1.2}WL Dati System Level}{27}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Capacity Test}{29}{section.3.2}
 \contentsline {section}{\numberline {3.3}Experimental Design and Analysis}{34}{section.3.3}
+\contentsline {chapter}{\numberline {4}Field Failure Data Analysis}{38}{chapter.4}
+\contentsline {section}{\numberline {4.1}Analisi a livello di nodo}{42}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Nodi funzionalmente simili}{46}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Analisi a livello di errore}{47}{section.4.2}
+\contentsline {section}{\numberline {4.3}Analisi combinata}{51}{section.4.3}
