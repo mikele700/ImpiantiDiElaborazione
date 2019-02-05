@@ -16,7 +16,7 @@ Rsys=(1-(1-Rm(1))^2)*((1-(1-Rm(6))^2))^2*(1-(1-Rm(2))^2)*(1-(1-Rm(4)))*(Rm(5)*(1
 
 %calcolo la coverage
 Rsys_noproc =((1-(1-Rm(6))^2))^2*(1-(1-Rm(2))^2)*(1-(1-Rm(4)))*(Rm(5)*(1-(1-Rm(3))^3));
-Rproc_mod= 0.99999/Rsys_noproc;
+Rproc_mod= 0.999999/Rsys_noproc;
 c=(Rproc_mod-Rm(1))/((1-Rm(1))*Rm(1));
 
  

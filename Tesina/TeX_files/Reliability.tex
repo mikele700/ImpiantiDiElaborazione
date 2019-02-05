@@ -188,8 +188,9 @@
 		\label{fig:fault_tree_es5}
 	\end{figure}
 	
-	Il minimal cut set sarà:\\\\
-	$ (PROC1*PROC2)+(BUSA1*BUSA2)+(BUSB1*BUSB2)+(TERM1*TERM2)+(((AHRS*AHRS*AHRS)+DOPP)*INS) $\\\\
+	I minimal cut set saranno:\\\\
+	$ M_{1}=(PROC1*PROC2)$\\
+	$M_{2}=(BUSA1*BUSA2)$\\$M_{3}=(BUSB1*BUSB2)$\\$M_{4}=(TERM1*TERM2)$\\$M_{5}=(((AHRS*AHRS*AHRS)+DOPP)*INS) $\\\\
 	Calcoliamo ora la reliability del sistema per un volo di un'ora tramite le formule per le serie e i paralleli:\\\\
 	$ R_{ser}=\prod_{i}^{}R_{i}(t) $\\
 	$ R_{par}=1-\prod_{i}^{}(1-R_{i}(t)) $\\\\
@@ -214,9 +215,11 @@
 	\end{figure}
 	
 	Otteniamo così un valore di reliability pari a 0.9957, quindi di due nines.\\\\
-	Ripetiamo ora lo stesso procedimento, includendo però un fattore di coverage c per la fault detection e la riconfigurazione delle processing unit, mantenendo, però, una reliability pari a 0.99999.\\
-	La formula da considerare che include il fattore di coverage è:\\\\
-	$ R_{MOD}=R_{1}+c*(1-R_{1})*R_{2} $\\\\
-	c è la probabilità che, quando un fallimento si presenta, esso è rilevato correttamente. $R_{1}$ e $R_{2}$ nel nostro caso sono entrambe uguali a $R_{PROC}$, mentre $R_{MOD}$ non è altro che $R_{PROC}$ modificato ovvero il rapporto tra la reliability desiderata (0.99999) e la reliability del sistema senza quella relativa ai processori.\\
-	Detto questo calcolo c (tramite un apposito script Matlab), come:\\\\
-	$ c=\frac{R_{PROC\_MOD}-R_{PROC}}{(1-R_{PROC})*R_{PROC}}=22.6711$
+	Ripetiamo ora lo stesso procedimento, includendo però un fattore di coverage c per la fault detection e la riconfigurazione delle processing unit, mantenendo, però, una reliability pari a 0.999999.\\
+	La nuova formula da considerare per i processori, che include il fattore di coverage è:\\\\
+	$ R_{c}=R_{1}+c*(1-R_{1})*R_{2} $\\\\
+	c è la probabilità che, quando un fallimento si presenta, esso è rilevato correttamente. $R_{1}$ e $R_{2}$ sono entrambe uguali a $R_{PROC}$.\\
+	Basta quindi calcolare $R_{c}$ in funzione della reliability del sistema, fissata a 0.999999. Si calcola, poi, c (tramite un apposito script Matlab), come:\\\\
+	$ c=22.7163$
+	
+	Non esiste, dunque, un valore di coverage tale da constentire il raggiungimento di una reliability di 6 nines.
