@@ -157,7 +157,66 @@
 	Calcoliamo ora i costi in tutti e 3 i casi:\\\\
 	$ Costo_{N=7,Rm=0.8}=1000*7=7000\$ $\\\\
 	$ Costo_{N=6,Rm=0.88}=1000*6+500*6=9000\$ $\\\\
-	$ Costo_{N=2,Rm=0.96}=1000*2+500*2+500*2=4000\$ $\\\\
-	In conclusione, per minimizzare il costo totale del sistema ed ottenere una reliability di 2 nines, abbiamo bisogno di 2 processori su cui si applicano due aumenti di reliability del 10\%. 
+	$ Costo_{N=2,Rm=0.96}=1000*2+500*2+500*2=4000\$ $\\\\\\
+	In conclusione, per minimizzare il costo totale del sistema ed ottenere una reliability di 2 nines, abbiamo bisogno di 2 processori su cui si applicano due aumenti di reliability del 10\%.\\\\\\\\\\
 	
 	\section{Esercizio 5}
+	Il sistema descritto nella figura sottostante è un sistema di elaborazione per un elicottero. Il sistema ha processori dual-ridondanti e unità di interfaccia dual-ridondanti. Sono usati due bus nel sistema e entrambi sono dual-ridondanti. La parte interessante del sistema è l'equipaggiamento di navigazione. Il velivolo può essere completamente navigato usando l'Inertial Navigation System (INS). Se l'INS fallisce, il velivolo può essere navigato usando la combinazione del Doppler e dell'Altitude Heading and Reference System (AHRS). Il sistema contiene tre unità AHRS, di cui solo una è necessaria. Questo è un esempio di ridondanza funzionale dove i dati dall'AHRS e dal Doppler possono essere usati per rimpiazzare l'INS, se esso fallisce. A causa di altri sensori e strumenti, entrambi i bus sono necessari affinché il sistema funzioni correttamente indipendentemente dalla modalità di navigazione per cui esso è impiegato.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.8]{./immagine/reliability_es5.png}
+		\caption{Sistema di elaborazione di un elicottero}
+		\label{fig:reliability_es5}
+	\end{figure}
+	
+	Di seguito è mostrato il Reliability Block Diagram (RBD) del sistema:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.45]{./immagine/rbd_es5.png}
+		\caption{Reliability Block Diagram}
+		\label{fig:rbd_es5}
+	\end{figure}
+	
+	Di seguito è mostrato il Fault Tree del sistema:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{./immagine/fault_tree_es5.png}
+		\caption{Fault Tree}
+		\label{fig:fault_tree_es5}
+	\end{figure}
+	
+	Il minimal cut set sarà:\\\\
+	$ (PROC1*PROC2)+(BUSA1*BUSA2)+(BUSB1*BUSB2)+(TERM1*TERM2)+(((AHRS*AHRS*AHRS)+DOPP)*INS) $\\\\
+	Calcoliamo ora la reliability del sistema per un volo di un'ora tramite le formule per le serie e i paralleli:\\\\
+	$ R_{ser}=\prod_{i}^{}R_{i}(t) $\\
+	$ R_{par}=1-\prod_{i}^{}(1-R_{i}(t)) $\\\\
+	$ R_{sys}=(1-(1-R_{PROC})^{2})*(1-(1-R_{BUS})^{2})^{2}*(1-(1-R_{TERM})^{2})*(1-(1-R_{INS}))*(R_{DOPP}*(1-(1-R_{AHRS})^{3})) $\\\\
+	
+	Considerando la reliability come un'esponenziale negativo del tipo $ e^{-\lambda t} $ e avendo a disposizione i seguenti valori di MTTF per ogni componente, è possibile calcolare il failure rate di ciascuno e quindi la reliability del sistema ($\lambda=\frac{1}{MTTF}$). Per farlo utilizziamo Matlab.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.7]{./immagine/mttf_es5.png}
+			\caption{MTTF}
+			\label{fig:mttf_es5}
+		\end{figure}
+		
+	Otteniamo i seguenti valori di $\lambda$ per ogni componente mostrati in ordine come nella tabella precedente:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.9]{./immagine/lambda_es5.png}
+		\caption{Failure Rate}
+		\label{fig:lambda_es5}
+	\end{figure}
+	
+	Otteniamo così un valore di reliability pari a 0.9957, quindi di due nines.\\\\
+	Ripetiamo ora lo stesso procedimento, includendo però un fattore di coverage c per la fault detection e la riconfigurazione delle processing unit, mantenendo, però, una reliability pari a 0.99999.\\
+	La formula da considerare che include il fattore di coverage è:\\\\
+	$ R_{MOD}=R_{1}+c*(1-R_{1})*R_{2} $\\\\
+	c è la probabilità che, quando un fallimento si presenta, esso è rilevato correttamente. $R_{1}$ e $R_{2}$ nel nostro caso sono entrambe uguali a $R_{PROC}$, mentre $R_{MOD}$ non è altro che $R_{PROC}$ modificato ovvero il rapporto tra la reliability desiderata (0.99999) e la reliability del sistema senza quella relativa ai processori.\\
+	Detto questo calcolo c (tramite un apposito script Matlab), come:\\\\
+	$ c=\frac{R_{PROC\_MOD}-R_{PROC}}{(1-R_{PROC})*R_{PROC}}=22.6711$

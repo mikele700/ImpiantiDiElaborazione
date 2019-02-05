@@ -39,19 +39,24 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Grafico reliability dei sistemi al variare del tempo\relax }}{41}{figure.caption.37}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Architettura rete di computer\relax }}{42}{figure.caption.38}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Grafico reliability del sistema al variare del tempo con $\lambda =0.005$ \relax }}{44}{figure.caption.40}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Sistema di elaborazione di un elicottero\relax }}{46}{figure.caption.42}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Reliability Block Diagram\relax }}{47}{figure.caption.43}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Fault Tree\relax }}{47}{figure.caption.44}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces MTTF\relax }}{48}{figure.caption.45}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Failure Rate\relax }}{48}{figure.caption.46}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Sensitivity Analysis di Mercury\relax }}{46}{figure.caption.42}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Sensitivity Analysis di BlueGene/L\relax }}{47}{figure.caption.43}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Reliability empirica e TTF empirica di Mercury\relax }}{48}{figure.caption.44}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Reliability empirica e TTF empirica di BlueGene/L\relax }}{48}{figure.caption.45}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Fitting della Reliability empirica in Mercury\relax }}{49}{figure.caption.46}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Fitting della Reliability empirica in BlueGene\relax }}{49}{figure.caption.47}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Sensitivity Analysis dei top-5 entries-prone nodes di Mercury\relax }}{51}{figure.caption.51}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Empirical Reliability degli entries-prone nodes di Mercury\relax }}{52}{figure.caption.53}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Sensitivity Analysis dei top-5 entries-prone nodes di BlueGene/L\relax }}{53}{figure.caption.54}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Empirical Reliability degli entries-prone nodes di BlueGene/L\relax }}{54}{figure.caption.56}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Empirical Reliability dei nodi di calcolo di Mercury\relax }}{55}{figure.caption.57}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Sensitivity Analysis delle categorie di errore di Mercury\relax }}{56}{figure.caption.58}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Empirical Reliability delle categorie di errore di Mercury\relax }}{57}{figure.caption.60}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Sensitivity Analysis delle Compute Unit di BlueGene/L\relax }}{58}{figure.caption.61}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Empirical Reliability delle Compute Unit di BlueGene/L\relax }}{59}{figure.caption.63}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sensitivity Analysis di Mercury\relax }}{50}{figure.caption.47}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Sensitivity Analysis di BlueGene/L\relax }}{51}{figure.caption.48}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Reliability empirica e TTF empirica di Mercury\relax }}{52}{figure.caption.49}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Reliability empirica e TTF empirica di BlueGene/L\relax }}{52}{figure.caption.50}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Fitting della Reliability empirica in Mercury\relax }}{53}{figure.caption.51}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Fitting della Reliability empirica in BlueGene\relax }}{53}{figure.caption.52}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Sensitivity Analysis dei top-5 entries-prone nodes di Mercury\relax }}{55}{figure.caption.56}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Empirical Reliability degli entries-prone nodes di Mercury\relax }}{56}{figure.caption.58}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Sensitivity Analysis dei top-5 entries-prone nodes di BlueGene/L\relax }}{57}{figure.caption.59}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Empirical Reliability degli entries-prone nodes di BlueGene/L\relax }}{58}{figure.caption.61}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Empirical Reliability dei nodi di calcolo di Mercury\relax }}{59}{figure.caption.62}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Sensitivity Analysis delle categorie di errore di Mercury\relax }}{60}{figure.caption.63}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Empirical Reliability delle categorie di errore di Mercury\relax }}{61}{figure.caption.65}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Sensitivity Analysis delle Compute Unit di BlueGene/L\relax }}{62}{figure.caption.66}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Empirical Reliability delle Compute Unit di BlueGene/L\relax }}{63}{figure.caption.68}
