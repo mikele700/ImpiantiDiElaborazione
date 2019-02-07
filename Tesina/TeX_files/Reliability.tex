@@ -194,7 +194,7 @@
 	Calcoliamo ora la reliability del sistema per un volo di un'ora tramite le formule per le serie e i paralleli:\\\\
 	$ R_{ser}=\prod_{i}^{}R_{i}(t) $\\
 	$ R_{par}=1-\prod_{i}^{}(1-R_{i}(t)) $\\\\
-	$ R_{sys}=(1-(1-R_{PROC})^{2})*(1-(1-R_{BUS})^{2})^{2}*(1-(1-R_{TERM})^{2})*(1-(1-R_{INS}))*(R_{DOPP}*(1-(1-R_{AHRS})^{3})) $\\\\
+	$ R_{sys}=(1-(1-R_{PROC})^{2})*(1-(1-R_{BUS})^{2})^{2}*(1-(1-R_{TERM})^{2})*(1-((1-R_{INS})*(1-(R_{DOPP}*(1-(1-R_{AHRS})^{3}))))) $\\\\
 	
 	Considerando la reliability come un'esponenziale negativo del tipo $ e^{-\lambda t} $ e avendo a disposizione i seguenti valori di MTTF per ogni componente, è possibile calcolare il failure rate di ciascuno e quindi la reliability del sistema ($\lambda=\frac{1}{MTTF}$). Per farlo utilizziamo Matlab.
 	
@@ -214,12 +214,12 @@
 		\label{fig:lambda_es5}
 	\end{figure}
 	
-	Otteniamo così un valore di reliability pari a 0.9957, quindi di due nines.\\\\
-	Ripetiamo ora lo stesso procedimento, includendo però un fattore di coverage c per la fault detection e la riconfigurazione delle processing unit, mantenendo, però, una reliability pari a 0.999999.\\
+	Otteniamo così un valore di reliability pari a 0.999996453953123, quindi di cinque nines.\\\\
+	Ripetiamo ora lo stesso procedimento, includendo però un fattore di coverage c per la fault detection e la riconfigurazione delle processing unit, mantenendo, però, una reliability pari a 0.99999.\\
 	La nuova formula da considerare per i processori, che include il fattore di coverage è:\\\\
 	$ R_{c}=R_{1}+c*(1-R_{1})*R_{2} $\\\\
 	c è la probabilità che, quando un fallimento si presenta, esso è rilevato correttamente. $R_{1}$ e $R_{2}$ sono entrambe uguali a $R_{PROC}$.\\
-	Basta quindi calcolare $R_{c}$ in funzione della reliability del sistema, fissata a 0.999999. Si calcola, poi, c (tramite un apposito script Matlab), come:\\\\
-	$ c=22.7163$
+	Basta quindi sostituire $R_{c}$ nell'espressione di $ R_{sys} $ e ricavare c, fissando la reliability del sistema a 0.99999. Viene calcolato c tramite un apposito script Matlab come:\\\\
+	$ c=\dfrac{0.99999-R_{PROC}*R_{sys\_NO\_PROC}}{R_{sys\_NO\_PROC}*R_{PROC}*(1-R_{PROC})}=0.967720438880888$\\\\
 	
-	Non esiste, dunque, un valore di coverage tale da constentire il raggiungimento di una reliability di 6 nines.
+	Dove $R_{sys\_NO\_PROC}$ è la reliability del sistema calcolata non considerando quella dei processori.

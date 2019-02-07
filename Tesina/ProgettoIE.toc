@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {1.1}Lettura}{5}{section.1.1}
 \contentsline {section}{\numberline {1.2}Scrittura}{6}{section.1.2}
 \contentsline {section}{\numberline {1.3}Caratterizzazione dei dati misurati}{8}{section.1.3}
-\contentsline {chapter}{\numberline {2}Dataset Reduction}{12}{chapter.2}
+\contentsline {chapter}{\numberline {2}Workload Characterization}{12}{chapter.2}
 \contentsline {section}{\numberline {2.1}Descrizione del problema}{12}{section.2.1}
 \contentsline {section}{\numberline {2.2}Trattamento preliminare dei dati}{12}{section.2.2}
 \contentsline {section}{\numberline {2.3}PCA}{13}{section.2.3}
